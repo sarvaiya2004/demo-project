@@ -1,0 +1,262 @@
+
+<style>
+
+
+*{
+
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background-color: lightcyan;
+  background-image: url("../img/na.jpg");
+}
+.container{
+ background-image: url("../img/na.jpg");
+
+  width:700px;
+  margin:0 auto;
+  margin-top:20px;
+ border-radius: 5px;
+}
+.title-form{
+  background-color: darkgrey;
+  padding:20px;
+  border-radius: 10px; 
+  color:white;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+.student-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:repeat(5,1fr);
+  padding: 30px 10px 30px 10px;
+}
+.field-form{
+  display:flex;
+  padding:15px;
+}
+.field-form input[type="text"]{
+  flex:1;
+  padding-left: 10px;
+  outline: none;
+  border:none;
+  border-radius: 5px;
+  word-spacing:2px;
+}
+.field-form input[type="text"]:focus{
+ border: 2px solid darkred; 
+ border-radius: 20px;
+
+}
+.gender-field{
+  justify-content: space-evenly;
+  align-items:center;
+}
+.gender-field div{
+  border: none;
+  padding: 6px 15px;
+  margin-right:20px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  color:rgba(0,0,0,0.7);
+}
+.gender-field div span{
+  margin-right: 10px;
+  font-size:0.9sem;
+}
+.gender-field div input{
+  transform: translateY(2px);
+}
+/*---BIRTHDAY FIELD---*/
+.birthday-field{
+  justify-content: space-between;
+  align-items:center;
+}
+.birthday-field span{
+  color:red;
+}
+select{
+  height: 2.6em;
+  padding: 0 25px 0 5px;
+  border-radius: 20px;
+  border:none;
+  outline:none;
+  color: black;
+}
+.birthday-field > select{
+  padding:  10px  5px;
+  color: black;
+}
+/* ADDRESS */
+.address{
+  padding:10px 15px 0 15px;
+}
+textarea{
+  flex:1;
+  border-radius:20px;
+  padding:10px;
+}
+
+.year-section{
+  justify-content:space-evenly;
+  align-items:center;
+  color: black;
+}
+
+.button{
+  display:flex;
+  justify-content: flex-end;
+  padding:30px 15px 0 0;
+}
+
+.add{
+  padding: 0 20px;
+  border:none;
+  border-radius:20px;
+  background-color: black;
+  color:white;
+  letter-spacing: 2px; 
+}
+
+.field-form:nth-child(7){
+  grid-column: 2/3;
+  grid-row:2/3;  
+}
+.field-form:nth-child(8){
+  grid-column: 2/3;
+  grid-row:3/4;   
+}
+.field-form:nth-child(9){
+  grid-column: 2/3;
+  grid-row:4/5;  
+}
+</style>
+
+<<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>new</title>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<div class="container">
+  <div class="title-form">
+    <h1>STUDENT INFORMATION FORM</h1>
+  </div>
+  <form class="student-form">
+    <div class="field-form">
+      <input type="text" name="studentID" class="student-id" placeholder="Student ID" autofocus style="border-radius: 20px;">
+    </div>
+    <div class="field-form">
+      <input type="text" name="firstname" class="first-name" placeholder="First name" style="border-radius: 20px;">
+    </div>
+    <div class="field-form">
+      <input type="text" name="lastname" class="last-name" placeholder="Last name" style="border-radius: 20px;">
+    </div>
+    <div class="field-form gender-field">
+      <div class="male-container">
+        <span>Male</span><input type="radio" name="gender" class="male" value="male">
+      </div>
+      <div class="female-container">
+        <span>Female</span><input type="radio" name="gender" class="female" value="female">
+      </div>      
+    </div>
+    <div class="field-form birthday-field">
+      <span>Birthday</span>
+        <select name="month" id="month-selection">
+          <option value="">Month</option>
+          <option value="01">Jan</option>
+          <option value="02">Feb</option>
+          <option value="03">Mar</option>
+          <option value="04">Apr</option>
+          <option value="05">May</option>
+          <option value="06">Jun</option>
+          <option value="07">Jul</option>
+          <option value="08">Aug</option>
+          <option value="09">Sep</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+        <select name="day" id="day-selection">
+          <option value="">Day</option> 
+
+          
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">04</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+        </select>
+        
+        <select name="year" id="year-selection">
+          <option value="">Year</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>  
+    </div>
+    <div class="field-form address">
+      <textarea name="address" id="address" placeholder="Address"></textarea>
+      </div>
+    <div class="field-form dep">
+      <input type="text" name="department" class="department" placeholder="Department" style="border-radius: 20px;">
+    </div>
+    <div class="field-form">
+      <input type="text" name="course" class="course" placeholder="Course" style="border-radius: 20px;">
+    </div> 
+    <div class="field-form year-section">
+        <select name="year" id="schoolyear">
+          <option value="">School year</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+        </select>
+        <select name="section" id="section">  
+          <option value="">Section</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          
+      </select>   
+    </div>
+
+    <div class="field-form button">
+      <input type="submit" name="submit" class="add" value="Add">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+       
