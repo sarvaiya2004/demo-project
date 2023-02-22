@@ -1,0 +1,194 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Doucument</title>
+</head>
+<body>
+
+ -->
+                                              <!-- 19/02/2023 -->
+
+	                                  <!-- SELECT AN ELEMENT BY "ID" -->
+    <!-- <ul>
+    	<li>list 1</li>
+    	<li id="first">list 2</li>
+    	<li>list 3</li>
+    </ul>
+
+    <script>
+    	let elm = document.getElementById("first");
+    	elm.innerHTML = "<p> hello </p>";
+    </script> -->
+                                   
+                                     <!-- SELECT AN ELEMENT BY "CLASS NAME" -->
+
+    <!-- <ul>
+    	<li class="na">list 1</li>
+    	<li id="first">list 2</li>
+    	<li class="na">list 3</li>
+    </ul>                            
+  
+     <script>
+     	let elm = document.getElementsByClassName("na");
+    
+     	for(let i =0; i < elm.length; i++){
+        elm[i].innerHTML = "<p> hello </p>";
+     	}
+     </script>
+ -->
+
+                                            <!-- SELECT AN ELEMENT BY "Tag NAME" -->
+
+
+
+    <!-- <ul>
+    	<li class="na pi">list 1</li>
+    	<li id="first">list 2</li>
+    	<li class="na">list 3</li>
+    </ul>       
+
+     <h2>heading 1</h2>
+     <p>pragraph 1</p>
+     <h2>heading 2</h2>
+     <p>pragraph 2</p>
+     <h2>heading 3</h2>
+     <p>pragraph 3</p>
+
+     <script>
+
+     	let elm = document.getElementsByTagName("h2");
+    
+     	for(let i =0; i < elm.length; i++){
+        elm[i].innerHTML = " hello";
+     	}
+     </script>
+ -->
+
+
+                                              <!-- Query Selector -->
+
+
+             <!--        <h2 class="intro">heading 1</h2>
+
+    <div id="div1">              
+     <p class="intro">pragraph 1</p>
+     <h2 class="intro">heading 2</h2>
+     <p>pragraph 2</p>
+     <h2>heading 3</h2>
+     <p class="intro">pragraph 3</p>                          
+    </div>
+
+    <script>
+    	let elm = document.querySelectorAllss("p.intro");
+
+    	console.log(elm);
+
+    	for(let i =0; i < elm.length; i++){
+        elm[i].innerHTML = " hello ";
+     	}
+    </script> -->
+
+
+                                      <!-- Traversing element -->
+
+
+             <!--  <h2>heading </h2>
+          <ul>
+          	<li id="intro">list 1</li>
+          	<li>list 2</li>
+          	<li>list 3</li>
+          	<li>list 4</li>
+          </ul>
+
+          <ul>
+          	<li>list a</li>
+          	<li>list b</li>
+          	<li>list c</li>
+          	<li>list d</li>
+          </ul>
+
+<script> 
+	let elm = document.getElementById("intro");
+	let prt = elm.parentElement;
+	console.log(prt)
+</script>
+ -->
+
+                                            <!-- innerHTML -->
+
+                                           
+<!--  <div id="intro">
+ 	   <p>hello this is a p tag</p>
+ </div>
+
+
+ <script>
+ 	
+ 	let elm = document.getElementsById("intro")
+
+ </script> -->
+
+
+
+
+                                         <!-- 20-02-2023 -->
+
+                                         <!-- DOM -->
+
+
+<!-- <button id="btn" onclick="btnClick()">click me !</button>
+
+<script>
+	function btnClick() {
+		alert("button was clicked")
+	}
+
+</script>
+
+
+</body>
+</html>   -->
+
+
+
+                 
+
+
+                                                  <!-- @...@...@ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Stopwatch</title>
+ 	<link rel="stylesheet" href="style.css">
+   <script src="js/script.js"></script>
+ </head>
+ <body>
+    
+  <div id="container">
+  	<div id="time">
+  		<span class="digit" id="hr">00</span>
+  		<span class="txt">hr</span>
+  		<span class="digit" id="min">00</span>
+  		<span class="txt">Min</span>
+  		<span class="digit" id="sec">00</span>
+  		<span class="txt">sec</span>
+  		<span class="digit" id="count">00</span>
+  		</div>
+  		<div id="btn-container">
+  			<button class="btn" id="start" onclick="start()">Start</button>
+  			<button class="btn" id="stop" onclick="stop()">Stop</button>
+  			<button class="btn" id="reset" onclick="reset()">Reset</button>
+  		</div>
+  	
+  </div>
+
+ </body>
+ </html>
+
+   
